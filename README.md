@@ -47,16 +47,15 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-(.venv) (base) srihitapanati@Srihitas-Air ai110-module1show-gameglitchinvestigator-starter % PYTHONPATH=. pytest
 ====================================================== test session starts =======================================================
 platform darwin -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0
 rootdir: /Users/srihitapanati/Desktop/ai110-module1show-gameglitchinvestigator-starter
 plugins: anyio-4.13.0
-collected 5 items                                                                                                                
+collected 6 items                                                                                                                
 
-tests/test_game_logic.py .....                                                                                             [100%]
+tests/test_game_logic.py ......                                                                                            [100%]
 
-======================================================= 5 passed in 0.02s ========================================================
+======================================================= 6 passed in 0.02s ========================================================
 ```
 
 ## 🚀 Stretch Features

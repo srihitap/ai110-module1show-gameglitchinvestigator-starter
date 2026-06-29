@@ -27,3 +27,14 @@ def test_too_low_message_says_higher():
     _, message = check_guess(20, 50)
     assert "HIGHER" in message
     assert "LOWER" not in message
+
+
+# Test targeting the new game fix: after a win, check_guess must work
+# correctly with a fresh secret (game logic is stateless across restarts).
+def test_new_game_check_guess_works_after_win():
+    outcome, _ = check_guess(42, 42)
+    assert outcome == "Win"
+
+    outcome, message = check_guess(10, 80)
+    assert outcome == "Too Low"
+    assert "HIGHER" in message
