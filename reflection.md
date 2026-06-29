@@ -3,6 +3,11 @@
 Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
 
 ## 1. What was broken when you started?
+I noticed that the "New Game" button was broken, despite running out of attempts or guessing correctly, clicking the New Game button would not reset the progress.
+
+Looking at the secret number, if I guessed too high, it would tell em to go higher and if I guessed to low it would tell me to go even lower. Sometimes it wouldn't give me any indication.
+
+It also seems like the score isn't updated properly after each turn, fluctuating between negative numbers and positive numbers.
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
@@ -14,9 +19,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+  31|24  too low, go higher  "go lower"         none
+  31|15  too low, go higher  "go lower"         none
+|new game starts a new game  didn't start new   "must start new game"
 
 ---
 
