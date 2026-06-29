@@ -26,27 +26,37 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The game is a high/low concept. It will randomly generate a secret number and issues some number of guesses. The goal is to correctly guess the secret number within those guesses but also before running out of attempts. THe game will help by telling you whether your guess was too high or too low.
 - [ ] Detail which bugs you found.
+The hints were opposite, when guessing too high it would say go higher, and tell you to go lower when guessing too low. The new game button wasn't working.
 - [ ] Explain what fixes you applied.
+I changed the high/low logic for the function and it seems to properly indicate now. The new game button should also work.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Select New Game if starting again.
+2. Put a number in the bar and click on "Submit Guess"
+3. Following the on screen hint, continue selecting numbers until you've run out of attempts/guessed correctly.
+4. Once done, check the secret number by clicking on the dropdown bar.
+5. Select New Game once again.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+(.venv) (base) srihitapanati@Srihitas-Air ai110-module1show-gameglitchinvestigator-starter % PYTHONPATH=. pytest
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/srihitapanati/Desktop/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 5 items                                                                                                                
+
+tests/test_game_logic.py .....                                                                                             [100%]
+
+======================================================= 5 passed in 0.02s ========================================================
 ```
 
 ## 🚀 Stretch Features
